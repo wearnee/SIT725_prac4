@@ -1,0 +1,28 @@
+{
+  "name": "sit775_prac4",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "cf-deployment-tracker-client": "*",
+    "commander": "^2.6.0",
+    "express": "^4.14.1",
+    "http-post": "^0.1.1",
+    "http-proxy": "^1.8.1",
+    "mongodb": "^3.6.0",
+    "nodemon": "^2.0.4"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wearnee/SIT775_prac4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wearnee/SIT775_prac4/issues"
+  },
+  "homepage": "https://github.com/wearnee/SIT775_prac4#readme"
+}

@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>''''</title>
+
+        <!-- Compiled and minified CSS -->
+        <!-- Materialze-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Materialize icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Leaflet -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+        <!-- Leaflet -->
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+            crossorigin=""></script>
+    
+            <script src="envs.js"></script>
+           
+</head>
+<body>
+  <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#modalPoll-1">Make a commment</button>
+
+
+  <div class="container">
+    <h1 class="title">Message Board</h1>
+    <div class="row center" style="height: 100px;">
+        
+
+    </div>
+
+    <div class="row">
+        <div class=" input-field dcol s12">
+          <input value="enter your message" id="messageBox" type= "text" class="validate">
+          <label class="active" for="messagebox">Message</label>
+        </div>
+    </div>
+    <a id='btnMessage' class='waves-effect waves-light btn'>Post your thoughts</a>
+
+        </div>
+        <div class = 'row'>
+          <h2>Messages</h2>
+          <div class ="row centre" id='messages'>
+        </div>
+        
+        </div>
+
+       
+    </div>
+
+<!-- Modal: modalPoll -->
+<div class="modal fade right" id="modalPoll-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true" data-backdrop="false">
+  <div class="modal-dialog modal-full-height modal-right modal-notify modal-info" role="document">
+    <div class="modal-content">
+
+     
+      <!--Header-->
+      <div class="modal-header">
+        <p class="heading lead"> What would you like to say</p>
+          <span aria-hidden="true" class="white-text">×</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+        <div class="text-center">
+          <i class="far fa-file-alt fa-4x mb-3 animated rotateIn"></i>
+          <p>
+            <strong> Please say something. </strong>
+          </p>
+        </div>
+
+        <!--Basic textarea-->
+        <div class="md-form">
+          <textarea type="text" id="get-text" class="md-textarea form-control" rows="3"></textarea>
+          <label for="form79textarea">Your message</label>
+        </div>
+
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        <a type="button" class="btn btn-primary waves-effect waves-light" id="comment">Send 
+          <i class="fa fa-paper-plane ml-1"></i>
+        </a>
+        <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Cancel</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal: modalPoll -->
+</body>
